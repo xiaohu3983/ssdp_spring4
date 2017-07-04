@@ -13,6 +13,9 @@
     <properties>
         <java.version>1.8</java.version><!--jdk版本-->
         <springframework.version>4.3.9.RELEASE</springframework.version><!--springframework相关版本号-->
+        <aspectjrt.version>1.8.5</aspectjrt.version><!--aspectj注解支持-->
+        <junit.test>4.12</junit.test><!--单元测试junit的版本号-->
+        <spring.boot.version>1.5.4.RELEASE</spring.boot.version>
     </properties>
 
     <dependencies>
@@ -23,6 +26,36 @@
             <artifactId>spring-context</artifactId>
             <version>${springframework.version}</version>
         </dependency>
+        <!--2.spring aop支持-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <!--3.aspectj支持-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+
+        <!--3.spring test单元测试支持-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.test}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
